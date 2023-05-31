@@ -1,0 +1,437 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: #1c1c1c;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    display: none;
+}
+.header-container {
+    width: 100%;
+    width: 100vw;
+    height: 94%;
+    height: 94vh;
+    max-height: 1000px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    margin-top: 0;
+    background-color: #000;
+    padding: 10% 0 0 0;
+    box-sizing: border-box;
+}
+
+.video-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    opacity: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -mos-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.header-container h1 {
+    position: relative;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    color: #e7d90c;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-family: 'Libre Bodoni', serif;
+}
+
+
+h3 {
+    font-family: 'Libre Bodoni', serif;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+
+body {
+    font-size: 0.8rem;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+
+nav ul {list-style-type: none;
+
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li a {
+
+}
+
+nav ul li a:hover {
+
+}
+
+
+
+.flex-padre {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.portada {
+    display: flex;
+    width: 100%;
+
+}
+
+.historia {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.miembros {
+width 100vw;
+max-width: 574px;
+display: flex;
+flex-direction: row;
+}
+
+.miembros-hijo {
+    width: 100%;
+    position: relative;
+}
+
+.miembros-hijo__img {
+    height: 100vh;
+    
+}
+
+.miembros-hijo__txt {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgb(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.50s;
+    }
+
+.miembros-hijo__txt:hover,
+.miembros-hijo__txt:active {
+    opacity: 1;
+}
+
+.media {
+    display: flex;
+}
+
+}
+
+
+@media (min-width: 992px) {
+    body {
+        color: #1c1c1c;
+        font-family: Verdana, sans-serif;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    h3 {font-size: 1.2rem;}
+
+    .header-container h1 {
+        font-size: 5rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #111;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #333;
+    }
+
+    .historia {
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .miembros {
+        width: 1280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        }
+        
+        .miembros-hijo {
+            width: 424px;
+            height: 753px;
+            position: relative;
+        }
+        
+        .miembros-hijo__img {
+            height: 100%;
+            
+        }
+        
+        .miembros-hijo__txt {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                color: #fff;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                padding: 20px;
+                background-color: rgb(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: opacity 0.50s;
+            }
+        
+        .miembros-hijo__txt:hover,
+        .miembros-hijo__txt:active {
+            opacity: 1;
+        }
+
+
+        .discografia {
+            background-color: #1c1c1c;
+            padding: 40px 0px 40px 0px;
+            margin: 40px 0px 40px 0px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-around;
+        }
+            
+        
+        
+        .discografia-hijo {
+            font-size: 10px;
+            position: relative;
+            width: 290px;
+            height: 290px;
+        }
+        
+        .discografia-hijo ol {
+            display: inline;
+        }
+        
+        .discografia-hijo__img {
+            width: 100%;
+            
+        }
+        
+        .discografia-hijo__txt {
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background-color: rgb(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity 0.50s;
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+        
+        .discografia-hijo__txt:hover,
+        .discografia-hijo__txt:active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .media {
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            
+        }
+
+        .contacto {
+            background-color: #1c1c1c;
+            display: flex;
+            flex-direction: row;
+            margin: 40px 0px 80px 0px;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .contacto__img {
+            padding: 20px;
+        }
+
+
+        .formulario {
+            display: flex;
+            width: 30%;
+            padding: 20px;
+            flex-direction: column;
+            color: #fff;
+            font-size: 0.7rem;
+        }
+
+        .formulario input {
+            padding: 5px 0px 5px 0px;
+            margin: 5px 0px 5px 0px;
+            background-color: #333;
+            border: 1px solid #000;
+            color: #fff;
+        }
+
+
+        .formulario textarea {
+            background-color: #333;
+            border: 1px solid #000;
+            color: #fff;
+        }
+
+
+        footer {
+            width: 100%;
+            background-color: #111;
+            padding: 20px;
+            color: #fff;
+        }
+
+
+
+}
+
+/* TEST Carrousel para discos 
+
+
+body {
+    overflow-x: hidden;
+}
+
+.list {
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.list li {
+    list-style-type: none;
+    width: 200px;
+    height: 200px;
+    opacity: .25;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 2px;
+    background: #9C89B8;
+    transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+    opacity: 1;
+}
+
+.list .prev,
+.list .next {
+    cursor: pointer;
+}
+
+.list .prev {
+    transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+    transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+    transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+    transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    background-color: green;
+    border-radius: 2px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+*/
