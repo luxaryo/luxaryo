@@ -4,12 +4,17 @@
 
 body {
     color: #1c1c1c;
-    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
     display: none;
 }
+
+h3 {
+    font-family: 'Libre Bodoni', serif;
+    color: #fff;
+}
+
 .header-container {
     width: 100%;
     width: 100vw;
@@ -64,11 +69,26 @@ video {
 }
 
 
-h3 {
-    font-family: 'Libre Bodoni', serif;
+footer {
+    width: 100%;
+    background-color: #111;
+    padding: 20px;
     color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/* MOBILE */
 @media (max-width: 576px) {
 
 body {
@@ -88,12 +108,6 @@ h3 {
 
 nav {
     display: none;
-}
-
-.portada {
-    display: flex;
-    width: 100%;
-    height: 100vh;
 }
 
 .historia {
@@ -153,7 +167,49 @@ nav {
     opacity: 1;
 }
 
-.discografia {display: none;}
+.discografia {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: #111;}
+
+    .discografia-hijo {
+        font-size: 10px;
+        position: relative;
+        width: 320px;
+        height: 290px;
+    }
+    
+    .discografia-hijo ol {
+        display: inline;
+    }
+    
+    .discografia-hijo__img {
+        width: 100%;
+    }
+    
+    .discografia-hijo__txt {
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: rgb(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.50s;
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    
+    .discografia-hijo__txt:hover,
+    .discografia-hijo__txt:active {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 
 .media {
@@ -164,11 +220,18 @@ nav {
 }
 
 .media-galeria {
-    width: 300px;
-    margin: 5px;
+    display: none;
 }
 
 .media-videos {
+    display: none;
+}
+
+.media-galeria_m {
+    width: 310px;
+}
+
+.media-videos_m {
     width: 300px;
     margin: 5px;
 }
@@ -195,6 +258,10 @@ display: none;
     font-size: 0.7rem;
 }
 
+.formulario p {
+    margin: 10px 0px 10px 0px;
+}
+
 .formulario input {
     width: 100%;
     padding: 5px 0px 5px 0px;
@@ -211,21 +278,237 @@ display: none;
     color: #fff;
 }
 
-
-footer {
-    width: 100%;
-    background-color: #111;
-    padding: 20px;
-    color: #fff;
 }
 
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+        font-size: 0.8rem;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        margin: 2px  
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #111;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #333;
+    }
+
+    .historia {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .miembros-carrousel {
+        display: none
+    }
+
+    .miembros {
+        width: 768px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 0.7rem;
+        }
+        
+        .miembros-hijo {
+            width: 250px;
+            height: 444px;
+            position: relative;
+        }
+        
+        .miembros-hijo__img {
+            height: 100%;
+            
+        }
+        
+        .miembros-hijo__txt {
+                width: 100%;
+                height: 444px;
+                top: 0;
+                left: 0;
+                color: #fff;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                padding: 3px;
+                background-color: rgb(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: opacity 0.50s;
+                overflow-y: hidden;
+            }
+        
+        .miembros-hijo__txt:hover,
+        .miembros-hijo__txt:active {
+            opacity: 1;
+        }
+
+
+    .discografia {
+        padding: 40px 0px 40px 0px;
+        margin: 40px 0px 40px 0px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+    }
+        
+    
+    
+    .discografia-hijo {
+        font-size: 10px;
+        position: relative;
+        width: 190px;
+        height: 190px;
+    }
+    
+    .discografia-hijo ol {
+        display: inline;
+    }
+    
+    .discografia-hijo__img {
+        width: 100%;
+    }
+    
+    .discografia-hijo__txt {
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 190px;
+        height: 190px;
+        padding: 3px;
+        background-color: rgb(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.50s;
+        transform: translateY(20px);
+        transition: transform 0.25s;
+        overflow: auto;
+    }
+    
+    .discografia-hijo__txt:hover,
+    .discografia-hijo__txt:active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .media-galeria_m {
+        display: none;
+    }
+    
+    .media-videos_m {
+        display: none;
+    }
+
+    .media-galeria {
+        margin: 40px;
+        width: 500px;
+    }
+
+    .foto {
+        filter: grayscale(100%);
+        transition: 2s;
+    }
+
+    .foto:hover {
+        filter: grayscale(0%);
+    }
+
+    .media-videos {
+    width: 700px;
+    }
+
+    .contacto {
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: row;
+    
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .contacto__img {
+    display: none;
+    }
+    
+    .formulario {
+        display: flex;
+        width: 90%;
+        padding: 15px;
+        flex-direction: column;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    
+    .formulario p {
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .formulario input {
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        margin: 5px 0px 5px 0px;
+        background-color: #333;
+        border: 1px solid #000;
+        color: #fff;
+    }
+    
+    
+    .formulario textarea {
+        background-color: #333;
+        border: 1px solid #000;
+        color: #fff;
+    }
+
 }
 
 
+/* DESKPOT */
 @media (min-width: 992px) {
     body {
         color: #1c1c1c;
-        font-family: Verdana, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 0.9rem;
         margin: 0 auto;
         overflow-x: hidden;
@@ -371,6 +654,14 @@ footer {
             align-items: center;
         }
 
+        .media-galeria_m {
+            display: none;
+        }
+        
+        .media-videos_m {
+            display: none;
+        }
+
         .media-galeria {
             margin: 40px;
             width: 500px;
@@ -427,84 +718,5 @@ footer {
             color: #fff;
         }
 
-
-        footer {
-            width: 100%;
-            background-color: #111;
-            padding: 20px;
-            color: #fff;
-        }
-
-
-
 }
 
-/* TEST Carrousel para discos 
-
-
-body {
-    overflow-x: hidden;
-}
-
-.list {
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%)
-}
-
-.list li {
-    list-style-type: none;
-    width: 200px;
-    height: 200px;
-    opacity: .25;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    border-radius: 2px;
-    background: #9C89B8;
-    transition: transform 1s, opacity 1s;
-}
-
-.list .act {
-    opacity: 1;
-}
-
-.list .prev,
-.list .next {
-    cursor: pointer;
-}
-
-.list .prev {
-    transform: translateX(-220px) scale(.85);
-}
-
-.list .next {
-    transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-    transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-    transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
-    opacity: 0;
-    transition: opacity .5s, transform .5s;
-}
-
-.swipe {
-    width: 270px;
-    height: 200px;
-    position: absolute;
-    background-color: green;
-    border-radius: 2px;
-    transform: translate(-50%,-50%);
-    opacity: 0;
-}
-
-*/

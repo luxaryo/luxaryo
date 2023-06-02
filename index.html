@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
@@ -20,17 +21,21 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Roboto:wght@500&display=swap" rel="stylesheet">
-		<!--CSS-->
-        <link rel="stylesheet" href="css/style.css" />
+		<!--CSS fancybox, font awesome y estilos-->
         <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+
 
 		
 	</head>
 
+    <body>
+
     <header id="ini">
         <div class="header-container">
             <div class="video-container">
-                <video src="img/vide.mp4" preload="true" autoplay="autoplay" loop="loop" volume="0">
+                <video src="img/vide.mp4" preload autoplay loop muted>
                     </video>
                             <h1>Nirvana</h1>
             </div>
@@ -45,12 +50,8 @@
                 <li style="float:right"><a href="#con">Contacto</a></li>
             </ul>
         </nav>
-    </div>
-
-        
     </header>
 
-    <body>
 
         <main class="historia" id="his">
             <h2>historia</h2>
@@ -69,13 +70,12 @@
         <!--DESKPOT-->
 
         <section class="miembros" id="mie">
-            <h2>discografía</h2>
+            <h2>miembros</h2>
             <div class="miembros-hijo">
                 <div class="miembros-hijo__img">
                     <picture>
-                        <source media="(max-width: 576px)" srcset="img/mobile/dave.jpg">
-                        <source media="(max-width: 991px)" srcset="">
-                        <img src="img/pc/dave.jpg" alt="">
+                        <source media="(max-width: 991px)" srcset="img/tablet/dave.jpg">
+                        <img src="img/pc/dave.jpg" alt="Fotografía de Dave Grohl con una visera hacia atrás">
                     </picture>
                 </div>
                 <div class="miembros-hijo__txt">
@@ -87,9 +87,8 @@
             <div class="miembros-hijo">
                 <div class="miembros-hijo__img">
                     <picture>
-                        <source media="(max-width: 576px)" srcset="img/mobile/kurt.jpg">
-                        <source media="(max-width: 991px)" srcset="">
-                        <img src="img/pc/kurt.jpg" alt="">
+                        <source media="(max-width: 991px)" srcset="img/tablet/kurt.jpg">
+                        <img src="img/pc/kurt.jpg" alt="Fotografía de Kurt Cobain con lentes y gorro de aviador">
                     </picture>
                 </div>
                 <div class="miembros-hijo__txt">
@@ -101,9 +100,8 @@
             <div class="miembros-hijo">
                 <div class="miembros-hijo__img">
                         <picture>
-                            <source media="(max-width: 576px)" srcset="img/mobile/krist.jpg">
-                            <source media="(max-width: 991px)" srcset="">
-                            <img src="img/pc/krist.jpg" alt="">
+                            <source media="(max-width: 991px)" srcset="img/tablet/krist.jpg">
+                            <img src="img/pc/krist.jpg" alt="Fotografía de Krist Navoselic a tres cuartos">
                         </picture>
                 </div>
                 <div class="miembros-hijo__txt"><h3>Krist Novoselic </h3>
@@ -116,10 +114,10 @@
         <!--MOBILE-->
 
         <section class="miembros-carrousel fotorama"   data-minheight="420"  data-maxheight="1020" id="mie">
-            <h2>discografía</h2>
+            <h2>miembros</h2>
             <div class="miembros-carrousel-hijo">
                 <div class="miembros-carrousel-hijo__img">
-                        <img src="img/mobile/dave.jpg" alt="">
+                        <img src="img/mobile/dave.jpg" alt="Fotografía de Dave Grohl con una visera hacia atrás">
                 </div>
                 <div class="miembros-carrousel-hijo__txt">
                     <h3>Dave Grohl</h3>
@@ -130,7 +128,7 @@
 
             <div class="miembros-carrousel-hijo">
                 <div class="miembros-carrousel-hijo__img">
-                        <img src="img/mobile/kurt.jpg" alt="">
+                        <img src="img/mobile/kurt.jpg" alt="Fotografía de Kurt Cobain con lentes y gorro de aviador">
                 </div>
                 <div class="miembros-carrousel-hijo__txt">
                 <h3>Kurt Cobain</h3>
@@ -141,7 +139,7 @@
 
             <div class="miembros-carrousel-hijo">
                 <div class="miembros-carrousel-hijo__img">
-                            <img src="img/mobile/krist.jpg" alt="">
+                            <img src="img/mobile/krist.jpg" alt="Fotografía de Krist Navoselic a tres cuartos">
                 </div>
                 <div class="miembros-carrousel-hijo__txt"><h3>Krist Novoselic </h3>
                     <p> Nacido el 16 de mayo de 1965 en Compton, California, Krist Novoselic fue el bajista de Nirvana. Junto a Cobain, formó la banda en 1987 y contribuyó a su sonido distintivo. Después de la disolución de Nirvana, Novoselic trabajó en varios proyectos musicales y también se involucró en la política. Continuó tocando música de forma intermitente y ha participado en reuniones ocasionales de Nirvana junto a Dave Grohl.
@@ -155,8 +153,11 @@
             <h2>discografía</h2>
         <div class="discografia-hijo">
             <div class="discografia-hijo__img">
-            <img src="img/pc/bleach.jpg" alt="">
-            </div>
+            <picture>
+            <source media="(max-width: 991px)" srcset="img/tablet/bleach.jpg">
+            <img src="img/pc/bleach.jpg" alt="Tapa del disco Bleach. Una fotografía en negativo de la banda tocando en vivo">
+            </picture>
+        </div>
             <div class="discografia-hijo__txt">
             <h3>Bleach</h3>
             15 de junio de 1989
@@ -177,7 +178,10 @@
         </div>
         <div class="discografia-hijo">
             <div class="discografia-hijo__img">
-            <img src="img/pc/nevermind.jpg" alt="">
+            <picture>
+            <source media="(max-width: 991px)" srcset="img/tablet/nevermind.jpg">
+            <img src="img/pc/nevermind.jpg" alt="Tapa del disco Nevermind. Un fotomontaje de un bebé persiguiendo un dolar">
+            </picture>
             </div>
             <div class="discografia-hijo__txt">
             <h3>Nevermind</h3>
@@ -201,7 +205,10 @@
         </div>
             <div class="discografia-hijo">
                 <div class="discografia-hijo__img">
-                <img src="img/pc/inutero.jpg" alt="">
+                <picture>
+                <source media="(max-width: 991px)" srcset="img/tablet/inutero.jpg">
+                <img src="img/pc/inutero.jpg" alt="Tapa del disco In Utero. Fotografía de un maniquí anatómico transparente de una mujer embarazada con alas de ángel.">
+                </picture>
                 </div>
                 <div class="discografia-hijo__txt">
             <h3>In Utero</h3>
@@ -224,14 +231,17 @@
         </div>
         <div class="discografia-hijo"> 
             <div class="discografia-hijo__img">
-            <img src="img/pc/unplugged.jpg" alt="">
+            <picture>
+            <source media="(max-width: 991px)" srcset="img/tablet/unplugged.jpg">
+            <img src="img/pc/unplugged.jpg" alt="Tapa del disco MTV Unplugged in New York. Fotografía del escenario sobre un fondo blanco.">
+            </picture>
             </div>
             <div class="discografia-hijo__txt">
             <h3>MTV Unplugged in New York</h3>
             18 de noviembre de 1993
             <ol>
-                <li>«About a Girl»	Kurt Cobain	3:37</li>
-                <li>«Come as You Are»	Kurt Cobain	4:13</li>
+                <li>«About a Girl»	3:37</li>
+                <li>«Come as You Are»	4:13</li>
                 <li>«Jesus Doesn't Want Me for a Sunbeam» 	4:37</li>
                 <li>«The Man Who Sold the World»	4:20</li>
                 <li>«Pennyroyal Tea»		3:40</li>
@@ -239,31 +249,50 @@
                 <li> «Polly»		3:16</li>
                 <li>«On A Plain»		3:44</li>
                 <li>«Something In The Way»		4:01</li>
-                <li>«Plateau» (Versión de Meat Puppets)		3:38</li>
-                <li> «Oh Me» (Versión de Meat Puppets)	3:26</li>
-                <li>«Lake of Fire» (Versión de Meat Puppets)	2:55</li>
+                <li>«Plateau» 		3:38</li>
+                <li> «Oh Me» 	3:26</li>
+                <li>«Lake of Fire» 2:55</li>
                 <li>«All Apologies»		4:23</li>
                 <li>«Where Did You Sleep Last Night»	5:08</li>
         </ol>
     </div>
         </div>
-
-        
         </section>
 
 
         <section class="media" id="media">
             <h2>media</h2>
+            <!--DESKPOT-->
             <figure class="media-galeria">
-            <a id="single_image" href="img/foto1.jpg" data-fancybox="galeria"><img src="img/foto1-s.jpg" class="foto" alt=""/></a>
-            <a id="single_image" href="img/foto2.jpg"  data-fancybox="galeria"><img src="img/foto2-s.jpg" class="foto" alt=""/></a>
-            <a id="single_image" href="img/foto3.jpg"  data-fancybox="galeria"><img src="img/foto3-s.jpg" class="foto" alt=""/></a>
-            <a id="single_image" href="img/foto4.jpg"  data-fancybox="galeria"><img src="img/foto4-s.jpg" class="foto" alt=""/></a>
-            <a id="single_image" href="img/foto5.jpg"  data-fancybox="galeria"><img src="img/foto5-s.jpg" class="foto" alt=""/></a>
-            <a id="single_image" href="img/foto6.jpg"  data-fancybox="galeria"><img src="img/foto6-s.jpg" class="foto" alt=""/></a>
+            <a id="single_image" href="img/foto1.jpg" data-fancybox="galeria"><img src="img/foto1-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+            <a id="single_image" href="img/foto2.jpg"  data-fancybox="galeria"><img src="img/foto2-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+            <a id="single_image" href="img/foto3.jpg"  data-fancybox="galeria"><img src="img/foto3-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+            <a id="single_image" href="img/foto4.jpg"  data-fancybox="galeria"><img src="img/foto4-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+            <a id="single_image" href="img/foto5.jpg"  data-fancybox="galeria"><img src="img/foto5-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+            <a id="single_image" href="img/foto6.jpg"  data-fancybox="galeria"><img src="img/foto6-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
             </figure>
 
-            <div class="media-videos fotorama" data-nav="thumbs" data-width="800">
+            <!--MOBILE-->
+            <figure class="media-galeria_m">
+                <a id="single_image" href="img/foto1.jpg" data-fancybox="galeria"><img src="img/foto1-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                <a id="single_image" href="img/foto2.jpg"  data-fancybox="galeria"><img src="img/foto2-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                <a id="single_image" href="img/foto3.jpg"  data-fancybox="galeria"><img src="img/foto3-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                <a id="single_image" href="img/foto4.jpg"  data-fancybox="galeria"><img src="img/foto4-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                <a id="single_image" href="img/foto5.jpg"  data-fancybox="galeria"><img src="img/foto5-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                <a id="single_image" href="img/foto6.jpg"  data-fancybox="galeria"><img src="img/foto6-s.jpg" class="foto" alt="Fotografía de la banda"/></a>
+                </figure>
+
+            <!--DESKPOT-->
+            <div class="media-videos fotorama" data-nav="thumbs" data-width="700">
+                <a href="https://www.youtube.com/watch?v=vabnZ9-ex7o"></a>
+                <a href="https://www.youtube.com/watch?v=PbgKEjNBHqM"></a>
+                <a href="https://www.youtube.com/watch?v=hTWKbfoikeg"></a>
+                <a href="https://www.youtube.com/watch?v=n6P0SitRwy8"></a>
+                <a href="https://www.youtube.com/watch?v=qv96yJYhk3M"></a>
+            </div>
+
+            <!--MOBILE-->
+            <div class="media-videos_m fotorama" data-nav="thumbs">
                 <a href="https://www.youtube.com/watch?v=vabnZ9-ex7o"></a>
                 <a href="https://www.youtube.com/watch?v=PbgKEjNBHqM"></a>
                 <a href="https://www.youtube.com/watch?v=hTWKbfoikeg"></a>
@@ -275,11 +304,11 @@
         <section class="contacto" id="con">
             <h2>contacto</h2>
         <div class="contacto__img">
-            <img src="https://static.tvtropes.org/pmwiki/pub/images/nirvana.jpg" alt="">
+            <img src="https://static.tvtropes.org/pmwiki/pub/images/nirvana.jpg" alt="Fotografía de la banda en blanco y negro">
         </div>
 
         <div class="formulario">
-            Ante cuaquier inquietud podés contactarnos a través de este formulario.
+            <p>Ante cuaquier inquietud podés contactarnos a través de este formulario.</p>
             <div>
             <label>E-mail</label>
             <input type="text" name="e-mail"></div>
@@ -298,7 +327,10 @@
         
         <footer>
             <div>
-            redes sociales xd
+                <a href="https://www.youtube.com/channel/UCFMZHIQMgBXTSxsr86Caazw" class="fa fa-youtube"></a>
+                <a href="https://www.reddit.com/r/Nirvana/" class="fa fa-reddit"></a>
+                <a href="https://twitter.com/Nirvana" class="fa fa-twitter"></a>
+
             </div>
 
             <div>
@@ -313,4 +345,3 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     </body>
-<!--This is a comment. Comments are not displayed in the browser-->
