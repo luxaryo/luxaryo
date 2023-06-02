@@ -50,6 +50,7 @@
                 <li style="float:right"><a href="#con">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
 
@@ -154,6 +155,7 @@
         <div class="discografia-hijo">
             <div class="discografia-hijo__img">
             <picture>
+            <source media="(max-width: 768px)" srcset="img/pc/bleach.jpg">
             <source media="(max-width: 991px)" srcset="img/tablet/bleach.jpg">
             <img src="img/pc/bleach.jpg" alt="Tapa del disco Bleach. Una fotografía en negativo de la banda tocando en vivo">
             </picture>
@@ -179,6 +181,7 @@
         <div class="discografia-hijo">
             <div class="discografia-hijo__img">
             <picture>
+            <source media="(max-width: 768px)" srcset="img/pc/nevermind.jpg">
             <source media="(max-width: 991px)" srcset="img/tablet/nevermind.jpg">
             <img src="img/pc/nevermind.jpg" alt="Tapa del disco Nevermind. Un fotomontaje de un bebé persiguiendo un dolar">
             </picture>
@@ -206,6 +209,7 @@
             <div class="discografia-hijo">
                 <div class="discografia-hijo__img">
                 <picture>
+                <source media="(max-width: 768px)" srcset="img/pc/inutero.jpg">
                 <source media="(max-width: 991px)" srcset="img/tablet/inutero.jpg">
                 <img src="img/pc/inutero.jpg" alt="Tapa del disco In Utero. Fotografía de un maniquí anatómico transparente de una mujer embarazada con alas de ángel.">
                 </picture>
@@ -232,6 +236,7 @@
         <div class="discografia-hijo"> 
             <div class="discografia-hijo__img">
             <picture>
+            <source media="(max-width: 768px)" srcset="img/pc/unplugged.jpg">
             <source media="(max-width: 991px)" srcset="img/tablet/unplugged.jpg">
             <img src="img/pc/unplugged.jpg" alt="Tapa del disco MTV Unplugged in New York. Fotografía del escenario sobre un fondo blanco.">
             </picture>
@@ -344,4 +349,16 @@
             <!--FOTORAMA-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+            
+            <!--MENU HAMBURGUESA-->
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+            </script>
     </body>

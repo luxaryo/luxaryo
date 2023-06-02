@@ -4,6 +4,7 @@
 
 body {
     color: #1c1c1c;
+    box-sizing: border-box;
 }
 
 h2 {
