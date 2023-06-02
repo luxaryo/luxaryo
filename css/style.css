@@ -72,7 +72,9 @@ h3 {
 @media (max-width: 576px) {
 
 body {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-container h1 {
@@ -84,65 +86,52 @@ h3 {
 }
 
 
-nav ul {list-style-type: none;
-
-}
-
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-nav ul li a {
-
-}
-
-nav ul li a:hover {
-
-}
-
-
-
-.flex-padre {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+nav {
+    display: none;
 }
 
 .portada {
     display: flex;
     width: 100%;
-
+    height: 100vh;
 }
 
 .historia {
-    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
     display: flex;
+    padding: 5px;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
 
 .miembros {
-width 100vw;
-max-width: 574px;
-display: flex;
-flex-direction: row;
+    display: none;
 }
 
-.miembros-hijo {
+.miembros-carrousel {
+    display: flex;
+    margin: 10px 0px 20px 0px;
+}
+
+.miembros-carrousel-hijo {
     width: 100%;
     position: relative;
+    height: 100%;
 }
 
-.miembros-hijo__img {
-    height: 100vh;
-    
+.miembros-carrousel-hijo__img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
 }
 
-.miembros-hijo__txt {
+.miembros-carrousel-hijo__txt {
         width: 100%;
         height: 100%;
         top: 0;
@@ -159,13 +148,75 @@ flex-direction: row;
         transition: opacity 0.50s;
     }
 
-.miembros-hijo__txt:hover,
-.miembros-hijo__txt:active {
+    .miembros-carrousel-hijo__txt:hover,
+    .miembros-carrousel:active {
     opacity: 1;
 }
 
+.discografia {display: none;}
+
+
 .media {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-galeria {
+    width: 300px;
+    margin: 5px;
+}
+
+.media-videos {
+    width: 300px;
+    margin: 5px;
+}
+
+.contacto {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.contacto__img {
+display: none;
+}
+
+.formulario {
+    display: flex;
+    width: 90%;
+    padding: 15px;
+    flex-direction: column;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
+    background-color: #333;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+
+.formulario textarea {
+    background-color: #333;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
 }
 
 }
@@ -214,6 +265,10 @@ flex-direction: row;
         width: 70%;
         margin: 0 auto;
         padding: 50px;
+    }
+
+    .miembros-carrousel {
+        display: none
     }
 
     .miembros {
@@ -311,9 +366,27 @@ flex-direction: row;
 
         .media {
             display: flex;
-            align-content: center;
-            justify-content: space-around;
-            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .media-galeria {
+            margin: 40px;
+            width: 500px;
+        }
+
+        .foto {
+            filter: grayscale(100%);
+            transition: 2s;
+        }
+
+        .foto:hover {
+            filter: grayscale(0%);
+        }
+
+        .media-videos {
+        width: 900px;
         }
 
         .contacto {
